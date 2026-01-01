@@ -1,0 +1,148 @@
+Css
+main {
+    padding: 30px;
+    font-size: 16px;
+    color: #555;
+
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: f4f4f4;
+}
+
+h1 {
+    color: #222;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+}
+
+img {
+    margin-top: 20px;
+    width: 120px;
+}
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    width: 60px;
+    margin-right: 15px;
+
+    /* transition for smooth rotation */
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: rotate(15deg);
+}
+
+/*Website title */
+.site-title {
+    font-size: 24px;
+    color: #222;
+}
+
+/*Page content */
+main {
+    padding: 30px;
+    font-size: 16px;
+}
+
+/* Link styling */
+.link {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+
+    /* Add transition */
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #ff6600; /* changes color on hover */
+}
+
+/* Button styling */
+.btn {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    /* Add smooth animation */
+    transition: background-color 0.3s ease,transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #004999;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .site-title {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
+
+/* Navigation styling */
+.nav {
+    margin-left: auto;
+}
+
+.nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .nav {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
